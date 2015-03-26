@@ -1,0 +1,169 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+   		android:orientation="vertical">
+       
+        
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>       
+			
+           
+            
+       		 <FrameLayout 
+          		  android:id="@android:id/tabcontent"
+          		  android:layout_width="match_parent"
+           		  android:layout_height="match_parent">
+          		   
+            
+        
+           			 <LinearLayout 
+                		android:id="@+id/tab1"
+                		android:orientation="vertical"
+                		android:layout_width="match_parent"
+                		android:layout_height="match_parent">
+                		
+                		<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text1"
+        android:textSize="30sp" />
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/text2" />
+     <EditText
+         android:id="@+id/num1"
+         android:layout_gravity="center_horizontal"
+         android:gravity="center_horizontal" 
+         android:hint="@string/tishi1"
+         android:layout_height="wrap_content"
+         android:layout_width="200sp"
+         android:inputType="number"
+        />
+        
+      
+     <EditText
+         android:id="@+id/num2"
+         android:layout_gravity="center_horizontal"
+         android:gravity="center_horizontal"
+         android:hint="@string/tishi2"
+         android:layout_height="wrap_content"
+         android:layout_width="200sp"
+         android:inputType="text"
+        />
+     
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text3" />
+
+     <RadioGroup
+         android:id="@+id/man"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:checkedButton="@+id/studentTex"
+         android:orientation="horizontal" 
+          >
+	
+         <RadioButton
+             android:id="@+id/studentTex"
+             android:layout_width="78dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_horizontal"
+             android:text="@string/student" />
+
+         <RadioButton
+             android:id="@+id/teacherTex"
+             android:layout_width="78dp"
+             android:layout_height="wrap_content"
+             android:text="@string/teacher" />
+
+     </RadioGroup>
+     
+ <LinearLayout 
+     
+     
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     
+     
+     
+     <Button 
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:text="@string/denglu"
+         
+         />
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:text="@string/zhuce" />
+ </LinearLayout>   
+
+              			  </LinearLayout>
+                		
+                		<LinearLayout 
+                		android:id="@+id/tab2"
+                		android:orientation="vertical"
+                		android:layout_width="match_parent"
+                		android:layout_height="match_parent">
+                		
+                		<TextView
+                		    android:layout_width="wrap_content"
+                		    android:layout_height="wrap_content"
+                		    android:text="@string/tab2"/>
+              			  </LinearLayout>
+                		
+                		<LinearLayout 
+                		android:id="@+id/tab3"
+                		android:orientation="vertical"
+                		android:layout_width="match_parent"
+                		android:layout_height="match_parent">
+                		
+                		<TextView
+                		    android:layout_width="wrap_content"
+                		    android:layout_height="wrap_content"
+                		    android:text="@string/tab3"/>
+              			  </LinearLayout>
+						
+                		
+                		<LinearLayout 
+                		android:id="@+id/tab4"
+                		android:orientation="vertical"
+                		android:layout_width="match_parent"
+                		android:layout_height="match_parent">
+                		
+                		<TextView
+                		    android:layout_width="wrap_content"
+                		    android:layout_height="wrap_content"
+                		    android:text="@string/tab4"/>
+              			  
+                		    
+                		</LinearLayout>
+            
+            	 </FrameLayout>  
+ 
+        
+        </LinearLayout>
+
+</TabHost>
